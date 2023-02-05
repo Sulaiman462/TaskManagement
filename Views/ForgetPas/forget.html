@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .txt_field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.txt_field label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.txt_field input[type="email"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid lightgray;
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.log-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.log-btn:hover {
+  background-color: royalblue;
+}
+
+
+
+  </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"> </script>
+
+  <body class="container">
+    <div class="form-group txt_field">
+      <label>Email add</label>
+      <input type="email" required name="email" id="email" class="form-control" placeholder="Email " id="UserName">
+      <span></span>
+    </div>
+    <br>
+    <div class="form-group btn">
+      <button id="clickme" class="log-btn">Login</button>
+    </div>
+  </body>
+
+
+
+    <script src='forget.js'></script>
+
+</body>
+</html>
